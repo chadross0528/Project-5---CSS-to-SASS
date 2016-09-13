@@ -1,0 +1,57 @@
+/*NAVIGATION*/
+
+.head-container {
+	margin: 0 auto;
+	max-width: 100%;
+	background-color: #f2f2f2;
+	text-align: center;
+	padding-bottom: 2.5px;
+}
+
+.wrapper {
+	ul{
+		padding: 0;
+		margin: 0;
+		padding-bottom: 40px;
+	}
+		@media (min-width: 768px) {
+			max-width: 80%;
+			margin: 0 auto;
+			padding: 20px 0;
+		}
+}
+
+#student-name {
+	margin-top: 0;
+	padding-top: 21.440px;
+	@media (min-width: 1024px) {
+		float: left;
+		padding-top: 0;
+		padding-left: 20px;
+		margin-top: 5px;
+	}
+}
+
+.main-nav {
+	li{
+		padding: 10px 25px;
+		background-color: #fff;
+		margin: 5px auto;
+		max-width: 80%;
+			@media (min-width: 768px) {
+			display: inline-block;
+			background-color: #f2f2f2;
+			}
+	}
+	a{
+		font-weight: 600;
+	}
+	
+	ul{
+	@media (min-width: 1024px) {
+		padding: 0;}
+	}
+	@media (min-width: 1024px) {
+		float: right;
+	}
+}

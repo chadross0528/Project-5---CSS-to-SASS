@@ -1,0 +1,46 @@
+
+
+/*INTRO*/
+
+.intro{
+	margin: $midMarg;
+	max-width: 100%;
+	background-color: $bkCol;
+	text-align: center;
+		@media #{$tablet} {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			max-width: 100%;
+		}
+}
+
+
+.img-div {
+	img{
+	width: 225px;
+	padding: 0;
+	margin: $midMarg;
+		@media #{$tablet} {
+			width: 100%;
+			max-width: 300px;
+		}
+}
+		@media #{$tablet} {
+			display: block;
+			width: 30%;
+			float: right;
+			padding-right: 7.5%;
+		}
+}
+
+.intro-content {
+		padding: 20px 10px;
+			@media #{$tablet} {
+			display: block;
+			width: 50%;
+			float: left;
+			text-align: left;
+			padding-left: 7.5%;
+			vertical-align: top;
+			}
+	}

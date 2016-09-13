@@ -1,0 +1,80 @@
+
+
+/*PRIMARY CONTENT*/
+
+.container{
+	background-color: #fff;
+	margin: $midMarg;
+	padding: 0;
+	width: 100%;
+}
+
+.col {
+	max-width: 90%;
+	margin: $midMarg;
+
+	img {
+		padding: 0;
+		margin: 0;
+		max-width: 100%;
+	}
+	 p {
+		max-width: 80%;
+		margin: $midMarg;
+		padding-bottom: 1em;
+	}
+}
+
+#portfolio, #contact{
+	text-align: center;
+	padding: 2.5em 0;
+	font-weight: bolder;
+}
+
+.primary-content, .content, .contact-info{
+	text-align: center;
+	padding: 0 10px;
+	padding-bottom: 15px;
+}
+
+.primary-content ul{
+	padding: 0;
+}
+
+.primary-content li{
+	padding: 20px 0;
+		@media #{$tablet} {
+			width: 47.2%;
+			padding: 0;
+			margin: 2% 1.25%;
+			float: left;
+		}
+		@media #{$desktop} {
+			max-width: 30.633333%;
+		}
+}
+
+.primary-content h3{
+	padding-top: .15em;
+	font-weight: 800;
+}
+
+
+/*CONTACT CONTENT*/
+
+.contact {
+	width: 100%;
+	margin: $midMarg;
+	background-color: $bkCol;
+}
+
+span {
+	font-weight: bolder;
+	padding-left: .5em
+}
+
+.contact .col p{
+	@media #{$tablet}{
+		max-width: 600px;
+	}
+}

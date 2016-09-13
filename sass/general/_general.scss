@@ -1,0 +1,48 @@
+
+
+/*GENERAL RULES*/
+
+li{
+	list-style: none;
+}
+
+img{
+	width: 400px;
+}
+
+ h1{
+	font-family: $jose;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	@extend h1;
+}
+
+
+
+p {
+	font-size: 1.25em;
+	color: $pColor;
+	line-height: 1.25em;
+	@extend h1;
+}
+
+h2 {
+	font-size: 1em;
+	@extend h1;
+}
+
+h3 {
+	font-size: 1.5em;
+	@extend h1;
+}
+
+.cf::after {
+    content: "";
+    display: table; 
+    clear: both;
+}
+
+

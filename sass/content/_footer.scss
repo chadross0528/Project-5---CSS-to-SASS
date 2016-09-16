@@ -1,24 +1,26 @@
 /*FOOTER CONTENT*/
-
+%inline {
+	display: inline-block
+}
 
 .foot-nav{
 	display: none;
 	float: right;
-		@media #{$desktop} {
+		@include desktop {
 			display: inline-block;
 		}
 	li{
-	 	@media #{$desktop} {
+	 	@include desktop {
 		display: inline-block;}
 	}
 	ul {
-		@media #{$desktop} {
+		@include desktop {
 		display: inline-block;
 		margin: 20px 0;}
 	}
 	a{
-		@media #{$desktop} {
-		font-weight: 600;
+		@include desktop {
+		font-weight: $fontW;
 		font-size: $fontS;
 		color: inherit;
 		margin: 0;
@@ -26,13 +28,13 @@
 	}
 }
 
-.extHead{
-	font-weight: 600;
+%extHead{
+	font-weight: $fontW;
 	color: inherit;
 }
 
 .foot-head {
-	@extend .extHead;
+	@extend %extHead;
 	margin: 23px 0;
 	font-size: $fontS;
 	float: left;
@@ -43,15 +45,15 @@
 }
 
 #nav-up a{
-	@extend .extHead;
-	display: inline-block;
+	@extend %extHead;
+	@extend %inline;
 	font-size: $fontS;
 	margin: 23px 0;
 }
 
 #nav-up {
 	float: right;
-		@media #{$desktop} {
+		@include desktop {
 			display: none;
 		}
 }
@@ -67,6 +69,6 @@
 }
 
 .container, .intro .col, .contact .col {
-		@media #{$desktop} {
+		@include desktop {
 		max-width: 1260px;}
 	}

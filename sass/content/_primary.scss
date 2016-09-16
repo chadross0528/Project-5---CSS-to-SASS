@@ -1,11 +1,13 @@
 
 
 /*PRIMARY CONTENT*/
-
-.container{
-	background-color: #fff;
-	margin: $midMarg;
+%padd {
 	padding: 0;
+}
+.container{
+	background-color: $CtCol;
+	margin: $midMarg;
+	@extend %padd;
 	width: 100%;
 }
 
@@ -14,7 +16,7 @@
 	margin: $midMarg;
 
 	img {
-		padding: 0;
+		@extend %padd;
 		margin: 0;
 		max-width: 100%;
 	}
@@ -38,25 +40,25 @@
 }
 
 .primary-content ul{
-	padding: 0;
+	@extend %padd;
 }
 
 .primary-content li{
 	padding: 20px 0;
-		@media #{$tablet} {
+		@include tablet {
 			width: 47.2%;
 			padding: 0;
 			margin: 2% 1.25%;
 			float: left;
 		}
-		@media #{$desktop} {
+		@include desktop {
 			max-width: 30.633333%;
 		}
 }
 
 .primary-content h3{
 	padding-top: .15em;
-	font-weight: 800;
+	font-weight: $fontW * 1.333333;
 }
 
 
@@ -74,7 +76,7 @@ span {
 }
 
 .contact .col p{
-	@media #{$tablet}{
+	@include tablet{
 		max-width: 600px;
 	}
 }

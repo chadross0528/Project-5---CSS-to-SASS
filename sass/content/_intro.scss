@@ -7,7 +7,7 @@
 	max-width: 100%;
 	background-color: $bkCol;
 	text-align: center;
-		@media #{$tablet} {
+		@include tablet {
 			padding-top: 20px;
 			padding-bottom: 20px;
 			max-width: 100%;
@@ -20,12 +20,12 @@
 	width: 225px;
 	padding: 0;
 	margin: $midMarg;
-		@media #{$tablet} {
+		@include tablet {
 			width: 100%;
 			max-width: 300px;
 		}
 }
-		@media #{$tablet} {
+		@include tablet {
 			display: block;
 			width: 30%;
 			float: right;
@@ -35,7 +35,7 @@
 
 .intro-content {
 		padding: 20px 10px;
-			@media #{$tablet} {
+			@include tablet {
 			display: block;
 			width: 50%;
 			float: left;

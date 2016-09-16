@@ -23,19 +23,19 @@ a{
 
 
 p {
-	font-size: 1.25em;
+	font-size: $fontS + .5em;
 	color: $pColor;
-	line-height: 1.25em;
+	line-height: $fontS + .5em;
 	@extend h1;
 }
 
 h2 {
-	font-size: 1em;
+	font-size: $fontS + .25em;
 	@extend h1;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: $fontS * 2;
 	@extend h1;
 }
 

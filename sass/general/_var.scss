@@ -1,7 +1,21 @@
 $jose: Josefin Sans;
 $pColor: #666;
 $bkCol: #f2f2f2;
+$CtCol: #fff;
 $midMarg: 0 auto;
 $fontS: .75em;
-$tablet: "(min-width: 768px)";
-$desktop: "(min-width: 1024px)";
+$fontW: 600;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+	@media (min-width: #{$tablet-width}){
+	@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}){
+	@content;
+	}
+}

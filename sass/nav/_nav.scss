@@ -14,7 +14,7 @@
 		margin: 0;
 		padding-bottom: 40px;
 	}
-		@media (min-width: 768px) {
+		@include tablet {
 			max-width: 80%;
 			margin: 0 auto;
 			padding: 20px 0;
@@ -24,7 +24,7 @@
 #student-name {
 	margin-top: 0;
 	padding-top: 21.440px;
-	@media (min-width: 1024px) {
+	@include desktop {
 		float: left;
 		padding-top: 0;
 		padding-left: 20px;
@@ -38,7 +38,7 @@
 		background-color: $CtCol;
 		margin: 5px auto;
 		max-width: 80%;
-			@media (min-width: 768px) {
+			@include tablet {
 			display: inline-block;
 			background-color: $bkCol;
 			}
@@ -48,10 +48,10 @@
 	}
 	
 	ul{
-	@media (min-width: 1024px) {
+	@include desktop {
 		padding: 0;}
 	}
-	@media (min-width: 1024px) {
+	@include desktop {
 		float: right;
 	}
 }

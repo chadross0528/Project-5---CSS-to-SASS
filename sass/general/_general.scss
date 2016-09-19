@@ -16,26 +16,26 @@ img{
 
 a{
 	text-decoration: none;
-	color: inherit;
+	color: $anchor;
 	@extend h1;
 }
 
 
 
 p {
-	font-size: $fontS + .5em;
+	font-size: $fontSP;
 	color: $pColor;
-	line-height: $fontS + .5em;
+	line-height: $fontSP;
 	@extend h1;
 }
 
 h2 {
-	font-size: $fontS + .25em;
+	font-size: $fontSH2;
 	@extend h1;
 }
 
 h3 {
-	font-size: $fontS * 2;
+	font-size: $fontSH3;
 	@extend h1;
 }
 

@@ -22,7 +22,7 @@
 		@include desktop {
 		font-weight: $fontW;
 		font-size: $fontS;
-		color: inherit;
+		color: $anchor;
 		margin: 0;
 		padding: 0 10px;}
 	}
@@ -30,7 +30,7 @@
 
 %extHead{
 	font-weight: $fontW;
-	color: inherit;
+	color: $anchor;
 }
 
 .foot-head {
